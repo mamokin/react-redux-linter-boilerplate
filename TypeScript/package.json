@@ -5,9 +5,10 @@
   "homepage": "./",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch-all",
-    "start": "node scripts/start.js",
-    "sonar": "node scripts/sonar.js"
+    "stylelint": "stylelint '**/*.scss'",
+    "start": "npm run stylelint && node scripts/start.js",
+    "sonar": "node scripts/sonar.js",
+    "test": "jest --watch-all"
   },
   "author": "",
   "license": "ISC",

@@ -59,7 +59,6 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          'sass-loader',
           {
             loader: 'postcss-loader',
             options: {
@@ -72,11 +71,12 @@ module.exports = {
                     'last 4 versions',
                     'Firefox ESR',
                     'not ie < 9' // React doesn't support IE8 anyway
-                  ]}),
-                require('stylelint')()
+                  ]}
+                )
               ]
             }
-          }
+          },
+          'sass-loader',
         ]
       },
       {
