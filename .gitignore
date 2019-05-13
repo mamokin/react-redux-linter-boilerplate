@@ -1,4 +1,4 @@
 node_modules/
 .vscode/
 .sonarlint/
-# npm-shrinkwrap.json
+npm-shrinkwrap.json
